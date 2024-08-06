@@ -21,7 +21,7 @@ from util_classes import ServerClient, Waypoint
 # Function to download the image and return it
 def download_image():
     try:
-        response = requests.get("https://t1robot2.ngrok.io:443/camera")
+        response = requests.get("<link>")
         img = Image.open(BytesIO(response.content))
         return img
     except:
